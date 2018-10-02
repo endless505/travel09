@@ -21,7 +21,7 @@ export default{
 }
 </script>
 
-<style scoped>  
+<style scoped>
   .header{
     line-height: .86rem;
     display: flex;
