@@ -2,9 +2,9 @@
     <div class="icons">
       <div class="icon" v-for="item in iconlist" :key="item.id">
         <div class="icon_img">
-            <img src="item.url" alt="q" class="icon_img_style">
+            <img :src="item.url" alt="q" class="icon_img_style">
         </div>
-        <p class="item.desc">景点</p>
+        <p class="icon_desc">{{item.desc}}</p>
       </div>
       
     </div>
