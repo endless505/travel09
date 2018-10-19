@@ -5,8 +5,10 @@
     </div>
     <div class="header_input">
       <span class="iconfont">&#xe662;</span>
+      <input type="text" placeholder="请输入你想要去的地点">
     </div>
     <div class="header_right">
+      <span style="padding-left:5px;">成都</span>
       <span class="iconfont">&#xe6aa;</span>
     </div>
   </div>
@@ -39,5 +41,8 @@ export default{
 }
 .header_right{
   float: right;
+}
+.iconfont{
+  margin-left: 5px;
 }
 </style>
