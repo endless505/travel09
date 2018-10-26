@@ -40,6 +40,12 @@ export default{
     margin-left: .2rem;
     color: #ccc;
   }
-  .back_icon{text-align: center;}
-  .header_right{width: 1.24rem;float: right;text-align: center;}
+  .back_icon{
+    text-align: center;
+    }
+  .header_right{
+    width: 1.24rem;
+    float: right;
+    text-align: center;
+    }
 </style>
