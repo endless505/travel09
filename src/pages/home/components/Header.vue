@@ -15,34 +15,34 @@
 </template>
 
 <script>
-export default{
-  name: 'HomeHeader'
-}
+export default {
+  name: "HomeHeader"
+};
 </script>
 
 <style scoped>
-.header{
-  height: .88rem;
-  line-height: .88rem;
+.header {
+  height: 0.88rem;
+  line-height: 0.88rem;
   background: red;
   display: flex;
 }
-.header_left{
+.header_left {
   float: left;
-  width: .60rem;
+  width: 0.6rem;
 }
-.header_input{
+.header_input {
   flex: 1;
   background: #fff;
   border-radius: 3px;
-  height: .64rem;
-  line-height: .64rem;
-  margin-top: .12rem;
+  height: 0.64rem;
+  line-height: 0.64rem;
+  margin-top: 0.12rem;
 }
-.header_right{
+.header_right {
   float: right;
 }
-.iconfont{
+.iconfont {
   margin-left: 5px;
 }
 </style>
