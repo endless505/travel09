@@ -18,55 +18,21 @@
 <script>
 export default{
   name: 'HomeIcons',
+  props: {
+    list: Array
+  },
   data: function () {
     return {
       swiperOption: {
-        pagination: '.swiper-pagination',
-        loop: true
-      },
-      iconList: [{
-        id: 1001,
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '热门景点'
-      }, {
-        id: 1002,
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '景点门票'
-      }, {
-        id: 1003,
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '景点门票'
-      }, {
-        id: 1004,
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '景点门票'
-      }, {
-        id: 1005,
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '景点门票'
-      }, {
-        id: 1006,
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '景点门票'
-      }, {
-        id: 1007,
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '景点门票'
-      }, {
-        id: 1008,
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/ea/01d081dacb03cc02.png',
-        desc: '赏秋色'
-      }, {
-        id: 1009,
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-        desc: '成都必游'
-      }]
+        pagination: '.swiper-pagination'
+        // loop: true
+      }
     }
   },
   computed: {
     pages: function () {
       const pages = []
-      this.iconList.forEach(function (item, index) {
+      this.list.forEach(function (item, index) {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
           pages[page] = []

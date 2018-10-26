@@ -2,11 +2,11 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item">
-        <img src="" alt="" class="item_img">
+      <li class="item" v-for="item of list" :key="item.id">
+        <img :src="item.imgUrl"  alt="" class="item_img">
         <div class="item_info">
-          <p class="item_title"></p>
-          <p class="item_desc"></p>
+          <p class="item_title">{{item.title}}</p>
+          <p class="item_desc">{{item.desc}}</p>
           <button class="item_button">查看详情</button>
         </div>
       </li>
@@ -17,15 +17,8 @@
 <script>
 export default{
   name: 'HomeRecommend',
-  data: function () {
-    return {
-      recommentList: [{
-        id: '1001',
-        imgUrl: '',
-        title: '',
-        desc: ''
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
